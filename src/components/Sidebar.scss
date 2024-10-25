@@ -1,0 +1,47 @@
+.sidebar {
+  width: 75px !important;
+  background-color: #f4f4f4;
+  padding: 1rem;
+   position: fixed;
+  margin-top: -4rem;
+  left: 0;
+  height: 100%;
+  z-index: 1; /* Lower z-index for sidebar */
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 0.5rem 0;
+}
+
+.sidebar nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav ul li a.active {
+  color: white;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #e0e0e0;
+  color: #007bff;
+}
+
+.sidebar nav ul li a svg {
+  transition: transform 0.3s;
+}
+
+.sidebar nav ul li a:hover svg {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}

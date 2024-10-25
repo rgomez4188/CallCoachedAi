@@ -1,0 +1,26 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.layout-content {
+  display: flex;
+  flex: 1;
+  margin-top: 64px; /* Adjust to match the height of the fixed header */
+}
+
+.layout-main {
+  flex: 1;
+  padding: 1rem;
+  margin-left: 100px; /* Offset by the sidebar width */
+  margin-right: 40px; 
+  margin-top: -50px; /* Adjust to align below the fixed header */
+  margin-bottom: 50px; 
+  background: white;
+  border-radius: 12px; /* Rounded corners for the layered look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 2; /* Higher z-index to appear above sidebar and header */
+  overflow-y: auto;
+}
