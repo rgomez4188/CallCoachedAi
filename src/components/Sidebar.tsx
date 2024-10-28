@@ -1,6 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { IconHeadset, IconVideo, IconCards, IconTemplate, IconGraph } from '@tabler/icons-react';
+import {
+  IconHome,
+  IconHeadset,
+  IconVideo,
+  IconCards,
+  IconTemplate,
+  IconGraph,
+  IconSettings
+} from '@tabler/icons-react';
 import './Sidebar.scss';
 
 const Sidebar: React.FC = () => {
@@ -8,6 +16,11 @@ const Sidebar: React.FC = () => {
     <aside className="sidebar">
       <nav>
         <ul>
+          <li>
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+              <IconHome size={24} />
+            </NavLink>
+          </li>
           <li>
             <NavLink to="/console" className={({ isActive }) => (isActive ? 'active' : '')}>
               <IconHeadset size={24} />
@@ -35,6 +48,11 @@ const Sidebar: React.FC = () => {
           </li>
         </ul>
       </nav>
+      <div className="sidebar-settings">
+        <NavLink to="/settings" className={({ isActive }) => (isActive ? 'active' : '')}>
+          <IconSettings size={24} />
+        </NavLink>
+      </div>
     </aside>
   );
 };

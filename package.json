@@ -4,6 +4,8 @@
   "type": "module",
   "private": true,
   "dependencies": {
+    "@auth/core": "^0.37.2",
+    "@auth/nextjs": "^0.0.0-380f8d56",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.5",
@@ -15,11 +17,13 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/leaflet": "^1.9.12",
-    "@types/node": "^16.18.108",
-    "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0",
+    "cookie-parser": "^1.4.7",
     "dotenv": "^16.4.5",
+    "express": "^4.21.1",
     "leaflet": "^1.9.4",
+    "next": "^15.0.1",
+    "next-auth": "^4.24.10",
+    "pg": "^8.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-feather": "^2.0.10",
@@ -30,7 +34,8 @@
     "save": "^2.9.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
-    "ws": "^8.18.0"
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -60,6 +65,17 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/node": "^22.8.1",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "nodemon": "^3.1.7"
-  }
+  },
+  "proxy": "http://localhost:4000",
+  "description": "The OpenAI Realtime Console is intended as an inspector and interactive API reference for the OpenAI Realtime API. It comes packaged with two utility libraries, [openai/openai-realtime-api-beta](https://github.com/openai/openai-realtime-api-beta) that acts as a **Reference Client** (for browser and Node.js) and [`/src/lib/wavtools`](./src/lib/wavtools) which allows for simple audio management in the browser.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
